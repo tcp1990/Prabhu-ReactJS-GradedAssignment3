@@ -47,9 +47,11 @@ const MovieList = (props: any) => {
 					props.movies.map((movie: IMovieItem) => (
 						<div>
 							<img src={"img/" + movie.poster} alt='movie'></img>
+							{/* <img src={movie.posterurl} alt='movie'></img> */}
 							<div onClick={() => props.handleFavouritesClick(movie)}>
 								<FavouriteComponent />
 							</div>
+							<label>{movie.title}</label>
 						</div>
 					))
 				}
