@@ -5,7 +5,7 @@ import IMovieItem from "../models/IMovieItem";
 const responsive = {
 	desktop: {
 		breakpoint: { max: 3000, min: 1024 },
-		items: 3,
+		items: 4,
 		slidesToSlide: 3 // optional, default to 1.
 	},
 	tablet: {
@@ -45,8 +45,8 @@ const MovieList = (props: any) => {
 			>
 				{
 					props.movies.map((movie: IMovieItem) => (
-						<div className='movie-main-tile'>
-							<div>
+						<div className='movie-card'>
+							<div className='movie-title-container'>
 								<label>{movie.title}</label>
 							</div>
 							<div className='image-container'>

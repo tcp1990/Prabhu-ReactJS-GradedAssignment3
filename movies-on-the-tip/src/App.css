@@ -3,7 +3,8 @@ body {
 	color: #ffffff;
 }
 
-.movie-main-tile {
+.movie-card {
+	margin-bottom: 60px;
 	padding: 20px;
 	width: 400px;
 	height: 400px;
@@ -11,9 +12,14 @@ body {
 	transition: transform 0.2s;
 }
 
+.movie-title-container{
+	background-color: #141414;
+	color: #ffffff;
+}
+
 .image-container {
 	width: 100%;
-	height: 95%;
+	height: 100%;
 }
 
 .image-container > img{
@@ -21,12 +27,12 @@ body {
 	height: 100%;
 }
 
-.movie-main-tile:hover {
+.movie-card:hover {
 	cursor: pointer;
 	transform: scale(1.1);
 }
 
-.movie-main-tile:hover .overlay {
+.movie-card:hover .overlay {
 	opacity: 1;
 }
 
