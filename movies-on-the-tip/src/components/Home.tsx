@@ -8,7 +8,7 @@ import RemoveFavourites from './RemoveFavourites';
 import { getUpcominMovies, getMoviesInTheaters, getTopRatedIndia, getTopRatedMovies } from '../services/movies';
 import IMovieItem from '../models/IMovieItem';
 
-const options = ['Coming Soon', 'Movies in Theaters', 'Top rated Indian', 'Movies in Theaters'];
+const options = ['Coming Soon', 'Movies in Theaters', 'Top rated Indian', 'Top Rated Movies'];
 
 function Home() {
 
