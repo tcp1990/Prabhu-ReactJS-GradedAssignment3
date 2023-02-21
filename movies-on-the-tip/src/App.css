@@ -3,22 +3,30 @@ body {
 	color: #ffffff;
 }
 
-.movie-app > .row {
-	overflow-x: auto;
-	flex-wrap: nowrap;
-}
-
-.image-container {
+.movie-main-tile {
+	padding: 20px;
+	width: 400px;
+	height: 400px;
 	position: relative;
 	transition: transform 0.2s;
 }
 
-.image-container:hover {
+.image-container {
+	width: 100%;
+	height: 95%;
+}
+
+.image-container > img{
+	width: 100%;
+	height: 100%;
+}
+
+.movie-main-tile:hover {
 	cursor: pointer;
 	transform: scale(1.1);
 }
 
-.image-container:hover .overlay {
+.movie-main-tile:hover .overlay {
 	opacity: 1;
 }
 
